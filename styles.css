@@ -1,0 +1,70 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #00000;
+}
+
+a:hover {
+    color: #004499;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Simple grid */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column {
+    float: left;
+    width: 100%;
+}
+
+/* For screens larger than 600px */
+@media screen and (min-width: 600px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* For screens larger than 900px */
+@media screen and (min-width: 900px) {
+    .column {
+        width: 33.33%;
+    }
+}
+
+/* Headers and sections */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
